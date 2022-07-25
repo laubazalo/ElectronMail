@@ -1,7 +1,6 @@
 /// In the main process.
 const { app, BrowserWindow } = require('electron')
 
-var contenido=''
 const createWindow=()=>{
 
     const win = new BrowserWindow({ 
@@ -16,9 +15,7 @@ const createWindow=()=>{
     win.once('ready-to-show',()=>{
         win.show()
     })
-    contenido=win.webContents
-
-    console.log(contenido)
+  
 }
 
 
@@ -30,7 +27,6 @@ app.whenReady().then(()=>{
         // dock icon is clicked and there are no other windows open.
         if (BrowserWindow.getAllWindows().length === 0) createWindow()
         
-        console.log(contenido)
     })
         
 })

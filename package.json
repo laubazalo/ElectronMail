@@ -1,0 +1,14 @@
+{
+  "name": "mailProyect",
+  "version": "1.0.0",
+  "main": "main.js",
+  "author": "lauba",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^19.0.9"
+  },
+  "scripts": {
+    "start": "electron ."
+  }
+
+}
